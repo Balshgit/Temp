@@ -1,0 +1,36 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+[tool.poetry]
+name = "github-repos"
+description = "Github repositories count"
+version = "0.1.0"
+authors = ["Dmitry Afanasyev"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+django = "^3.1"
+django-split-settings = "^1.0"
+django-health-check = "^3.16"
+django-http-referrer-policy = "^1.1"
+django-feature-policy = "^3.5"
+
+psycopg2-binary = "^2.8"
+python-decouple = "^3.3"
+bcrypt = "^3.2"
+celery = "^5.0.4"
+django-celery-results = "^2.0.0"
+django-celery-beat = "^2.1.0"
+requests = "2.25.1"
+eventlet = "0.30.0"
+
+[tool.poetry.dev-dependencies]
+django-debug-toolbar = "^3.2"
+django-querycount = "^0.7"
+django-extra-checks = "^0.8"
+django-coverage-plugin = "^1.8"
+nplusone = "^1.0"

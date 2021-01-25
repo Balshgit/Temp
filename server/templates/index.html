@@ -1,0 +1,20 @@
+<div  style="padding:40px;margin:40px;border:2px solid;align-items: center; #ccc" >
+  <body>
+      <!--[if lte IE 9]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+      <a href="/admin">ADMIN</a>
+
+  <div>
+    <form method="POST" action="{% url 'main:search' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Search</button>
+    </form>
+  </div>
+
+  </body>
+  </div>
+
+  </body>
